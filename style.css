@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family:  'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('images/bg-intro-mobile.png');
+}
+
+.first{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.learn{
+    color: white;
+    font-size: 25px;
+    /* font-weight: 800; */
+    padding-bottom: 17px;
+}
+
+.see{
+    color: white;
+    font-size: 15px;
+}
+
+.second{
+    align-content: center;
+}
+
+.try{
+    /* padding-top: 7% 8%;  */
+    /* font-weight: 700; */
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+    /* padding-left: 0px; */
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px 0px black;
+    padding: 20px 55px;
+}
+
+.try span{
+    font-weight: 100;
+    color: white;
+    font-size: 1rem;
+}
+
+.table{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.box{
+    padding: 10px 20px;
+    line-height: 3.5;
+}
+
+.table input{
+    margin-top: 8px;
+    width: 100%;
+    line-height: 3;
+    border-radius: 10px;
+    border-style: solid;
+    outline: none;
+    border-color: hsl(246, 25%, 77%);
+}
+
+.table ::placeholder{
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.claim{
+    margin-top: 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    line-height: 3;
+    background-color: hsl(154, 59%, 51%);
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.by{
+    color: lightgray;
+    line-height: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.by span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+/* Desktop veiw */
+
+@media (max-width:1024px){
+    .desk, .left, .dlearn, .dsee, .right, .dtry, .dtable{
+        display: none;
+    }
+}
+
+@media (min-width:1200px){
+    .first, .learn, .see, .second, .try, .box, .table{
+        display: none;
+    }
+}
+
+.desk{
+    width: 100%;
+    color: white;
+    font-family:  'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+
+.left{
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px;
+}
+
+.dlearn{
+    font-size: 2.9rem;
+    color: white;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.dsee{
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: rgb(226, 213, 213);
+    font-weight: 500;   
+}
+
+.right{
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 120px 120px 0px ;
+}
+
+.dtry span{
+    font-weight: 700;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.dtry{
+    padding: 30px 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 18px black;
+    width: 80%;
+    background-color: hsl(248, 32%, 49%);
+    font-size: 0.87rem;
+    line-height: 10px;
+    color: rgb(226, 213, 213);
+}
+
+.dtable{
+    padding: 25px;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 18px black;
+}
+
+.dtable input{
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: block;
+    line-height: 3;
+    width: 95%;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border: 1.6px solid lightgray;
+    border-radius: 5px;
+}
+
+.dtable .claim{
+    color: white;
+    padding: 5px 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+    background-color: hsl(154, 59%, 51%);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dtable .by{
+    font-size: 1rem;
+    line-height: 20px;
+    color: lightslategray;
+    text-align: center;
+    font-weight: 400;
+}
+
+.dtable span{
+        color: hsl(0, 100%, 74%) ;
+        font-size: 0.9rem;
+        font-weight: 800;
+}
